@@ -38,12 +38,12 @@ git push origin <branch>
 
 /* git configuration */
 9. git change global username and email
-$ git config --global user.name "John Doe"
-$ git config --global user.email "john@doe.org"
+$ git config --global user.name "Ankur Chaudhary"
+$ git config --global user.email "ankur@tech.org"
 
 10. git change current repo username and email
-$ git config user.name "John Doe"
-$ git config user.email "john@doe.org"
+$ git config user.name "Ankur Chaudhary"
+$ git config user.email "ankur@tech.org"
 
 11. git check global author name and mail
 $ git config user.name
@@ -65,7 +65,7 @@ $ git rebase -i -p 0ad14fa5
 then in editor change pick to edit
 and then follow the instruction given by git
 
-git commit --amend --author="ankurchaudhary <ankur.chaudhary@nagarro.com>" --no-edit
+git commit --amend --author="ankurchaudhary <ankur@tech.org>" --no-edit
 here --no-edit mean is No change in message of commit only change authorname
 
 
