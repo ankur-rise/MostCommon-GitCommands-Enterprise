@@ -1,0 +1,76 @@
+1. Git new branch
+   git checkout -b branchname repo/remote_name
+
+2. Git push local branch to remote
+   git push -u origin feature_branch_name
+
+2.Rease
+ git rebase -i repo/branch
+ git rebase --continue
+ git rebase --abort
+3. Delete remote
+   git push origin --delete branch_name
+
+5. Git reset
+cmd: git reset --hard HEAD~anyNumber
+git reset {hash of commit}
+git reset --soft
+
+/*.gitignore modification*/
+6. Git clean all ignored file
+git clean -fX
+follow this article: https://koukia.ca/how-to-remove-local-untracked-files-from-the-current-git-branch-571c6ce9b6b1
+
+7. How to ignore a file.
+ # Remove the file from the repository
+git rm --cached .idea/
+
+# now update your gitignore file to ignore this folder
+echo '.idea' >> .gitignore
+
+# add the .gitignore file
+git add .gitignore
+
+git commit -m "Removed .idea files"
+git push origin <branch>
+
+/* git configuration */
+9. git change global username and email
+$ git config --global user.name "John Doe"
+$ git config --global user.email "john@doe.org"
+
+10. git change current repo username and email
+$ git config user.name "John Doe"
+$ git config user.email "john@doe.org"
+
+11. git check global author name and mail
+$ git config user.name
+$ git config user.email
+
+for more info of git config please check
+https://www.git-tower.com/learn/git/faq/change-author-name-email
+
+/*Rewriting git history*/
+tutorial: https://www.git-tower.com/learn/git/faq/change-author-name-email
+https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages
+
+12. To change very last commit 
+git commit --amend --author="Ankur Chaudhary <ankur@tech.org>"
+
+13. Change any commit
+$ git rebase -i -p 0ad14fa5
+
+then in editor change pick to edit
+and then follow the instruction given by git
+
+git commit --amend --author="ankurchaudhary <ankur.chaudhary@nagarro.com>" --no-edit
+here --no-edit mean is No change in message of commit only change authorname
+
+
+
+
+
+
+
+
+
