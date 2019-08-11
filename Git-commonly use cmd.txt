@@ -1,3 +1,5 @@
+# Here 'repo'='origin' for me
+
 1. Git new branch
    git checkout -b branchname repo/remote_name
 
