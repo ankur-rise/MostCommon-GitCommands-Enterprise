@@ -6,24 +6,28 @@
 2. Git push local branch to remote
    git push -u origin feature_branch_name
 
-2.Rebase
+3. Git push locacl branch to remote branch with different name
+   git push origin local-name:remote-name
+
+4.Rebase
  git rebase -i repo/branch
  git rebase --continue
  git rebase --abort
-3. Delete remote
+ 
+5. Delete remote
    git push origin --delete branch_name
 
-5. Git reset
+6. Git reset
 cmd: git reset --hard HEAD~anyNumber
 git reset {hash of commit}
 git reset --soft
 
 /*.gitignore modification*/
-6. Git clean all ignored file
+7. Git clean all ignored file
 git clean -fX
 follow this article: https://koukia.ca/how-to-remove-local-untracked-files-from-the-current-git-branch-571c6ce9b6b1
 
-7. How to ignore a file.
+8. How to ignore a file.
  # Remove the file from the repository
 git rm --cached .idea/
 
