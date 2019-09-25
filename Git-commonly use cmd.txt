@@ -1,27 +1,33 @@
+# Here 'repo'='origin' for me
+
 1. Git new branch
    git checkout -b branchname repo/remote_name
 
 2. Git push local branch to remote
    git push -u origin feature_branch_name
 
-2.Rease
+3. Git push locacl branch to remote branch with different name
+   git push origin local-name:remote-name
+
+4.Rebase
  git rebase -i repo/branch
  git rebase --continue
  git rebase --abort
-3. Delete remote
+ 
+5. Delete remote
    git push origin --delete branch_name
 
-5. Git reset
+6. Git reset
 cmd: git reset --hard HEAD~anyNumber
 git reset {hash of commit}
 git reset --soft
 
 /*.gitignore modification*/
-6. Git clean all ignored file
+7. Git clean all ignored file
 git clean -fX
 follow this article: https://koukia.ca/how-to-remove-local-untracked-files-from-the-current-git-branch-571c6ce9b6b1
 
-7. How to ignore a file.
+8. How to ignore a file.
  # Remove the file from the repository
 git rm --cached .idea/
 
@@ -36,12 +42,12 @@ git push origin <branch>
 
 /* git configuration */
 9. git change global username and email
-$ git config --global user.name "John Doe"
-$ git config --global user.email "john@doe.org"
+$ git config --global user.name "Ankur Chaudhary"
+$ git config --global user.email "ankur@tech.org"
 
 10. git change current repo username and email
-$ git config user.name "John Doe"
-$ git config user.email "john@doe.org"
+$ git config user.name "Ankur Chaudhary"
+$ git config user.email "ankur@tech.org"
 
 11. git check global author name and mail
 $ git config user.name
@@ -69,7 +75,7 @@ $  git push origin :old-name new-name
 then in editor change pick to edit
 and then follow the instruction given by git
 
-git commit --amend --author="ankurchaudhary <ankur.chaudhary@nagarro.com>" --no-edit
+git commit --amend --author="ankurchaudhary <ankur@tech.org>" --no-edit
 here --no-edit mean is No change in message of commit only change authorname
 
 
