@@ -60,6 +60,12 @@ git commit --amend --author="Ankur Chaudhary <ankur@tech.org>"
 13. Change any commit
 $ git rebase -i -p 0ad14fa5
 
+14. Rename local branch
+$ git branch -m new_name
+
+15. Update the old-name brnach at remote
+$  git push origin :old-name new-name
+
 then in editor change pick to edit
 and then follow the instruction given by git
 
