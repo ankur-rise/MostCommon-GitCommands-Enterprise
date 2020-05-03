@@ -53,6 +53,9 @@ $ git config user.email "ankur@tech.org"
 $ git config user.name
 $ git config user.email
 
+12. git set default global editor
+$ git config --global core.editor notepad++ (notepad++ path should be in enviorment variables(System restart required))
+
 for more info of git config please check
 https://www.git-tower.com/learn/git/faq/change-author-name-email
 
@@ -66,17 +69,19 @@ git commit --amend --author="Ankur Chaudhary <ankur@tech.org>"
 13. Change any commit
 $ git rebase -i -p 0ad14fa5
 
-14. Rename local branch
-$ git branch -m new_name
-
-15. Update the old-name brnach at remote
-$  git push origin :old-name new-name
-
 then in editor change pick to edit
 and then follow the instruction given by git
 
 git commit --amend --author="ankurchaudhary <ankur@tech.org>" --no-edit
 here --no-edit mean is No change in message of commit only change authorname
+
+/*Rewriting git history*/
+
+14. Rename local branch
+$ git branch -m new_name
+
+15. Update the old-name brnach at remote
+$  git push origin :old-name new-name
 
 16. Git tagging a commit (annotated): consider tag is 'v840-driver'
 git tag -a v840-driver -m "tag for 4.840 version"
